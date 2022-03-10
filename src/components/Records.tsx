@@ -3,14 +3,14 @@ import { Button, Form, Input, Modal, Select, Space, Table, Tag } from "antd";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { AppState } from "../store";
-import { getCategories } from "../store/actions/categoryActions";
+import { AppState } from "../redux/reducers";
+import { getCategories } from "../redux/actions/categoryActions";
 import {
   addRecord,
   deleteRecord,
   getRecords,
   updateRecord,
-} from "../store/actions/recordActions";
+} from "../redux/actions/recordActions";
 import { Category } from "../types/category";
 import { Mode } from "../types/general";
 import { Record, RecordForm } from "../types/record";

@@ -12,13 +12,13 @@ import {
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { AppState } from "../store";
+import { AppState } from "../redux/reducers";
 import {
   addCategory,
   deleteCategory,
   getCategories,
   updateCategory,
-} from "../store/actions/categoryActions";
+} from "../redux/actions/categoryActions";
 import { Category, CategoryForm } from "../types/category";
 import { SketchPicker } from "react-color";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";

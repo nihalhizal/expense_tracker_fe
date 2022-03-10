@@ -3,8 +3,8 @@ import { Header } from "antd/lib/layout/layout";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
-import { AppState } from "../store";
-import { isLoggedIn } from "../store/actions/userActions";
+import { AppState } from "../redux/reducers";
+import { isLoggedIn } from "../redux/actions/userActions";
 
 function AppHeader() {
   const { data, loading, error } = useSelector((state: AppState) => state.user);

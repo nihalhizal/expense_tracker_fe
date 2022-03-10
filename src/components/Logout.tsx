@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router";
-import { AppState } from "../store";
-import { logout } from "../store/actions/userActions";
+import { AppState } from "../redux/reducers";
+import { logout } from "../redux/actions/userActions";
 
 function Logout() {
   const { data } = useSelector((state: AppState) => state.user);
